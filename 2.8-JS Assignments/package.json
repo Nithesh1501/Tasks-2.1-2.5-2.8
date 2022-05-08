@@ -1,0 +1,12 @@
+{
+  "name": "js-training",
+  "description": "JS training tasks",
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "author": "nithesh",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
