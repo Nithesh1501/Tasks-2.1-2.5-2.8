@@ -1,16 +1,30 @@
 //Get the Middle Character
 function getMiddle(s)
 {
+  const one = 1;
+  const two = 2;
   var position;
   var length;
   
-  if(s.length % 2 == 1) {
-      position = s.length / 2;
-      length = 1;
+  if(isOddorisEven(length)==='odd') {
+      position = s.length / two;
+      length = one;
   } 
   else {
-      position = s.length / 2 - 1;
-      length = 2;
+      position = s.length / two - one;
+      length = two;
   }
   return s.substring(position, position + length)
+}
+
+function isOddorisEven(length)
+{
+  if(length%two==one)
+  {
+    return 'odd';
+  }
+  else
+  {
+    return 'even';
+  }
 }
