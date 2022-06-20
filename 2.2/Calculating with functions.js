@@ -1,32 +1,45 @@
+const numbers = {
+    ZERO:  0,
+    ONE:   1,
+    TWO:   2,
+    THREE: 3,
+    FOUR:  4,
+    FIVE:  5,
+    SIX:   6,
+    SEVEN: 7,
+    EIGHT: 8,
+    NINE:  9,
+  };
+
 function zero(n) {
-    return n ? Math.floor(eval('0' + n)) : 0;
+    return n ? Math.floor(eval('numbers.ZERO' + n)) : numbers.ZERO;
 }
 function one(n) {
-    return n ? Math.floor(eval('1' + n)) : 1;
+    return n ? Math.floor(eval('numbers.ONE' + n)) : numbers.ONE;
 }
 function two(n) {
-    return n ? Math.floor(eval('2' + n)) : 2;
+    return n ? Math.floor(eval('numbers.TWO' + n)) : numbers.TWO;
 }
 function three(n) {
-    return n ? Math.floor(eval('3' + n)) : 3;
+    return n ? Math.floor(eval('numbers.THREE' + n)) : numbers.THREE;
 }
 function four(n) {
-    return n ? Math.floor(eval('4' + n)) : 4;
+    return n ? Math.floor(eval('numbers.FOUR' + n)) : numbers.FOUR;
 }
 function five(n) {
-    return n ? Math.floor(eval('5' + n)) : 5;
+    return n ? Math.floor(eval('numbers.FIVE' + n)) : numbers.FIVE;
 }
 function six(n) {
-    return n ? Math.floor(eval('6' + n)) : 6;
+    return n ? Math.floor(eval('numbers.SIX' + n)) : numbers.SIX;
 }
 function seven(n) {
-    return n ? Math.floor(eval('7' + n)) : 7;
+    return n ? Math.floor(eval('numbers.SEVEN' + n)) : numbers.SEVEN;
 }
 function eight(n) {
-    return n ? Math.floor(eval('8' + n)) : 8;
+    return n ? Math.floor(eval('numbers.EIGHT' + n)) : numbers.EIGHT;
 }
 function nine(n) {
-    return n ? Math.floor(eval('9' + n)) : 9;
+    return n ? Math.floor(eval('numbers.NINE' + n)) : numbers.NINE;
 }
 
 function plus(number) {
