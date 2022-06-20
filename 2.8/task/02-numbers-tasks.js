@@ -23,6 +23,10 @@ const { get } = require("express/lib/response");
  *   5, 10 => 50
  *   5, 5  => 25
  */
+
+const two = 2;
+const ten = 10;
+ 
 function getRectangleArea(width, height) {
     // throw new Error('Not implemented');
     return width*height;
@@ -42,7 +46,7 @@ function getRectangleArea(width, height) {
  */
 function getCicleCircumference(radius) {
     // throw new Error('Not implemented');
-    return 2 * Math.PI * radius;
+    return two * Math.PI * radius;
 }
 
 /**
@@ -59,9 +63,8 @@ function getCicleCircumference(radius) {
  */
 function getAverage(value1, value2) {
     // throw new Error('Not implemented');
-    return value1/2+value2/2;
+    return value1/two + value2/two;
 }
-getAverage(5,5);
 
 /**
  * Returns a distance beetween two points by cartesian coordinates.
@@ -80,7 +83,7 @@ getAverage(5,5);
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
     // throw new Error('Not implemented');
-    return Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
+    return Math.sqrt(Math.pow(x2-x1, two) + Math.pow(y2-y1, two));
 }
 
 /**
@@ -137,9 +140,8 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  */
 function getLastDigit(value) {
     // throw new Error('Not implemented');
-    return value%10;
+    return value%ten;
 }
-getLastDigit(100);
 
 
 /**
@@ -173,7 +175,7 @@ function parseNumberFromString(value) {
  */
 function getParallelipidedDiagonal(a,b,c) {
     // throw new Error('Not implemented');
-    return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
+    return Math.sqrt(Math.pow(a, two) + Math.pow(b, two) + Math.pow(c, two));
    // return Math.hypot(a,b,c)
 }
 
@@ -196,8 +198,8 @@ function getParallelipidedDiagonal(a,b,c) {
  */
 function roundToPowerOfTen(num, pow) {
     // throw new Error('Not implemented');
-    const a = Math.pow(10, pow);    
-    return Math.pow(10, pow) * Math.round(num / a);
+    const a = Math.pow(ten, pow);    
+    return Math.pow(ten, pow) * Math.round(num / a);
 }
 /**
  * Returns true is the number is prime; otherwise false.
@@ -219,17 +221,17 @@ function roundToPowerOfTen(num, pow) {
 function isPrime(n) {
     // throw new Error('Not implemented');
     let Prime = true;
-
-    if (n === 1) {
+    const one =1
+    if (n === one) {
     return false
     }
 
 
-    else if (n > 1) {
+    else if (n > one) {
 
     // looping through 2 to number-1
-    for (let i = 2; i < n; i++) {
-        if (n % i == 0) {
+    for (let index = two; index < n; index++) {
+        if (n % index == 0) {
             Prime = false;
             break;
         }
