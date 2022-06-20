@@ -1,16 +1,23 @@
-//Transportation on vacation
+
+const three = 3 ;
+const seven = 7;
+const twenty= 20;
+const forty = 40;
+const fifty = 50;
+
+
 function rentalCarCost(d) {
-  // Your solution here
-  if(d>=7)
+
+  if(d>=seven)
     {
-    return (d*40)-50;
+    return (d*forty)-fifty;
     }
-  else if(d>=3)
+  else if(d>=three)
     {
-      return (d*40)-20;
+      return (d*forty)-twenty;
     }
   else
     {
-      return d*40;
+      return d*forty;
     }
 }
